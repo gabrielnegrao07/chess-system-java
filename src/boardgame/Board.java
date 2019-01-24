@@ -37,5 +37,11 @@ public class Board {
         return pieces[position.getRow()][position.getColumn()];
     }
 
+    // Atribuição de uma peça a posição da matriz de pieces.
+    public void placePiece(Piece piece, Position position){
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
+    }
+
 
 }
